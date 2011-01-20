@@ -7,7 +7,7 @@ module BrFaker
     
     protected
     def generate_number(digits, ranges=[])
-      numbers = BrFaker.gererate_numbes(digits)
+      numbers = BrFaker.gererate_numbers(digits)      
       ranges.each do |range|
         div = BrFaker.mod11(numbers.reverse, range)
         numbers << div

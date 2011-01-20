@@ -1,10 +1,8 @@
 class String
-  def apply_mask(mask)    
-    count = 0
-    mask.gsub(/#/) do
-      str = self[count]
-      count +=1
-      str
-    end
+  def apply_mask(mask)        
+    str = mask.gsub(/#/).each_with_index do |ch, i|
+      self.each_char.entries[i]
+    end    
+    str
   end
 end

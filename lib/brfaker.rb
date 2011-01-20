@@ -6,7 +6,7 @@ module BrFaker
     %w{1 2 3 4 5 6 7 8 9 0}.rand
   end
   
-  def self.gererate_numbes(quantity)
+  def self.gererate_numbers(quantity)
     numbers = []
     quantity.times do
       numbers << random_number
